@@ -1,5 +1,44 @@
 #장인혁[201840131]
 
+## [04월26일]
+<br>
+
+>오늘배운내용 요약
+ <br>
+
+ 
+
+ ※. 객체
+ <br>객체와 반복문
+ <br>속성과 메소드
+ <br>객체기본
+ <br>생성자 함수와 프로토타입
+<br>기억에 남는 부분 
+<br> =  생성자함수
+
+#생성자 함수
+<br>
+ function Product(name, price) <br>{
+     this.name = name;<br>
+     this.price = price;
+ }
+
+<br>
+#프로토타입에 메소드 선언
+Product.prototype.print = function() {<br>
+    console.log('${product.name}의 가격은 ${product.price}원입니다.');<br>
+
+};
+<br>
+<br>
+#메소드 호출<br>
+product.print();
+<br>
+<br>
+#어려웠던 부분 : null을 활용해서 '아예값이 없는 상태'를 구분하는 것
+<br>
+<br>
+
 ## [04월13일]
 <br>
 
