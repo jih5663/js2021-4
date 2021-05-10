@@ -1,5 +1,44 @@
 #장인혁[201840131]
 
+## [05월4일]
+<br>
+
+>오늘배운내용 요약
+ <br>
+
+ 
+
+ ※. 표준내용객체
+ <br>기본자료형과 객체자료형의 차이점
+ <br>Number 객체
+ <br>String 객체
+ <br>Date 객체
+<br>Array 객체
+
+
+<br>
+<h3>＃Number 생성자함수의 속성<h3><br>
+//변수를 선언합니다.
+<br>
+let numberA = Number.MAX_VALUE;<br>
+let numberB = Number.MAX_VALUE + 1;<br>
+//출력합니다<br>
+console.log(numberA);<br>
+comsole.log(numberB);<br>
+<br>
+1을 추가해도 결국 출력되는 값이 같다는 점<br>
+<br>
+<br>
+<h3>＃String 객체 생성<h3><br>
+let stringFromLiteral = '안녕하세요';<br>
+let stringFromConstructor = new String('안녕하세요');<br>
+<br>
+<h3>※String 객체의 메소드는 변경된 값을 리턴한다.<h3>
+<br>
+#어려웠던 부분 : Date객체에서의 시간간격 구하기
+<br>
+<br>
+
 ## [04월26일]
 <br>
 
