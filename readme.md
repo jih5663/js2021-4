@@ -1,5 +1,66 @@
 #장인혁[201840131]
 
+
+## [05월18일]
+<br>
+
+>오늘배운내용 요약
+ <br>
+
+ 
+
+ ※. Node.js
+ <br>Node.js의 전역 변수
+ <br>Node.js 문서를 보는 방법
+ <br>Node.js 모듈의 동기 메소드를 이해하기
+ <br>Node.js외부모듈
+<br>템플릿엔진
+
+
+<br>
+<h3>전역 변수,전역함수,전역객체 : 모든 곳에서 사용할 수 있는 것들<h3><br>
+//문자열 자료형의 전역 변수
+<br>
+__filename -> 현재 실행중인 코드의 파일 경로를 나타냅니다.<br>
+__dimname -> 현재 실행중인 코드의 폴더 경로를 나타냅니다.<br>
+//예제<br>
+console.log(__filename);<br>
+comsole.log(__dirname);<br>
+<br>
+Node.js는 process 전역 객체를 제공<br>
+process 객체는 프로세스 정보를 제공하며, 제어할 수 있게 하는 객체
+<br>
+<br>
+<h3>process 객체와 이벤트 개요<h3><br>
+#Node.js의 이벤트 연결 메소드<br>
+on(<이벤트 이름>, <이벤트 핸들러><br>
+<br>
+<h3>파일처리와 예외처리<h3>
+<br>
+@동기 코드 예외처리 : try catch구문
+<br>
+@비동기 코디 예외처리 : 콜백함수의 첫 번째 매개 변수 error를 활용
+<br>
+
+<br>
+#어려웠던 부분 : File System 모듈여러 파일을 <br>
+비동기적으로 읽기<br>
+<br>
+//모듈을 추출합니다.<br>
+const fs = require('fs');
+const async = require('async');
+<br>
+//병렬적으로 파일을 읽어 들입니다.
+<br>
+async.parallel([<br>
+    (callback) => { fs.readFile('a.txt, callback);},<br>
+    (callback) => { fs.readFile('a.txt, callback);},<br>
+    (callback) => { fs.readFile('a.txt, callback);},<br>
+    ], (error, results) => {<br>
+    //출력합니다.<br>
+    console.log(results);}
+<br>
+<br>
 ## [05월4일]
 <br>
 
